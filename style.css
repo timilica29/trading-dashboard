@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #111315;
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin-top: 100px;
+}
+
+.hero-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#tradingForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  gap: 30px;
+  width: 200px;
+
+  background-color: #1b1e22;
+  border-radius: 20px;
+}
+
+.pair,
+.entryPrice,
+.exitPrice,
+.lotSize {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+input {
+  padding: 5px;
+}
+
+#formButton {
+  box-shadow: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #3a82f7;
+  color: white;
+
+  font-size: 14px;
+  padding: 10px;
+}

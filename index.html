@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trading Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="hero-heading">
+        <h1>Trading Dashboard</h1>
+        <p>A place you can track your trades easily.</p>
+      </div>
+
+      <form name="tradingForm" action="" id="tradingForm">
+        <div class="pair">
+          <label for="pair">Pair</label>
+          <input
+            type="text"
+            name="pair"
+            id="pair"
+            placeholder="EUR/USD"
+            required
+          />
+        </div>
+
+        <div class="entryPrice">
+          <label for="tradeEntry">Entry Price</label>
+          <input
+            type="number"
+            name="tradeEntry"
+            id="tradeEntry"
+            step="0.0001"
+            required
+          />
+        </div>
+
+        <div class="exitPrice">
+          <label for="tradeExit">Exit Price</label>
+          <input
+            type="number"
+            name="tradeExit"
+            id="tradeExit"
+            step="0.0001"
+            required
+          />
+        </div>
+
+        <div class="lotSize">
+          <label for="lotSize">Lot Size</label>
+          <input
+            type="number"
+            name="lotSize"
+            id="lotSize"
+            step="0.01"
+            required
+          />
+        </div>
+
+        <button type="submit" id="formButton">Add Trade</button>
+      </form>
+    </div>
+  </body>
+</html>
