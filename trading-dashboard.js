@@ -2,11 +2,7 @@
 const trades = [];
 
 const addTradeBtn = document.querySelector("#addTradeBtn");
-
-const pairInput = document.querySelector("#pair");
-const entryInput = document.querySelector("#tradeEntry");
-const exitInput = document.querySelector("#tradeExit");
-const lotSize = document.querySelector("#lotSize");
+const inputs = document.querySelectorAll("input");
 
 
 
@@ -16,20 +12,12 @@ addTradeBtn.addEventListener("click", (e) => {
 });
 
 function addTrades(){
-    const newTrade = {
-        pair: pairInput.value,
-        entry: entryInput.value,
-        exit: exitInput.value,
-        lotSize: lotSize.value
-    };
+    const newTrade = {};
+    inputs.forEach(item => {
+        newTrade[item.name] = item.value;
+        item.value = "";
+    });
 
     trades.push(newTrade);
-
-    pairInput.value = "";
-    entryInput.value = "";
-    exitInput.value = "";
-    lotSize.value = "";
-}
-
-
+};
 
